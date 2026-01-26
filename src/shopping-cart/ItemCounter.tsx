@@ -5,6 +5,12 @@ interface ItemCounterProps {
 }
 
 export const ItemCounter = ({ name, quantity }: ItemCounterProps) => {
+
+  const handleClick = () => {
+    console.log(`click ${name}`);
+
+  }
+
   return (
     <section
       style={{
@@ -20,7 +26,10 @@ export const ItemCounter = ({ name, quantity }: ItemCounterProps) => {
         }}
       >{name}</span>
 
-      <button>+1</button>
+      <button
+        onClick={handleClick}
+      >+1</button>
+
       <span> {quantity} </span>
       <button>-1</button>
     </section>
