@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > should match snapshot 1`] = `
+<div>
+  <div>
+    <h1
+      data-testid="first-name-title"
+    >
+      Fernando
+       
+    </h1>
+    <h3>
+      Herrera
+       
+    </h3>
+    <p
+      class="favorite-class"
+    >
+      Elden Ring,  Smash, Metal Gear
+    </p>
+    <p>
+      4
+    </p>
+    <h1>
+      Activo
+       
+    </h1>
+    <p
+      style="background-color: rgb(240, 143, 143); border-radius: 20px; padding: 10px;"
+    >
+      {"zipCode":"ABC-123","country":"Canada"}
+    </p>
+  </div>
+</div>
+`;

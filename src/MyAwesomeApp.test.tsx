@@ -23,5 +23,11 @@ describe('MyAwesomeApp', () => {
     // const h3 = container.querySelector('h3');
     const h1 = screen.getByTestId('first-name-title')
     expect(h1.innerHTML).toContain('Fernando');
-  })
+  });
+
+  test('should match snapshot', () => {
+    const { container } = render(<MyAwesomeApp />);
+    expect(container).toMatchSnapshot();
+  });
+
 })
